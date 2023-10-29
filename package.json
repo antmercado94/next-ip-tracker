@@ -11,7 +11,7 @@
   "dependencies": {
     "envalid": "^8.0.0",
     "leaflet": "^1.9.4",
-    "next": "13.5.4",
+    "next": "13.5.5",
     "next-svgr": "^0.0.2",
     "plaiceholder": "^3.0.0",
     "react": "^18",
