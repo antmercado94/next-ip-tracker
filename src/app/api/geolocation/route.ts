@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
   const res = await getGeolocation(getQueryString(searchTerm));
 
   if (!res.ok) {
-    if (res.status === 422 || res.status === 404)
+    if (res.status === 422 || res.status === 404 || res.status === 400)
       return new NextResponse(null, {
         status: 422,
       });
