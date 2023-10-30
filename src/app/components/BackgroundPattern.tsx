@@ -2,7 +2,9 @@ import Image from "next/image";
 import { getLocalBase64 } from "@/lib/getLocalBase64";
 
 export default async function BackgroundPattern() {
-  const blurURL = await getLocalBase64("./public/bg/pattern-bg-desktop.png");
+  const blurURL = await getLocalBase64(
+    "./src/app/assets/pattern-bg-desktop.png",
+  );
   return (
     <picture className="relative contents">
       <source media="(max-width: 640px)" srcSet="/bg/pattern-bg-mobile.png" />
