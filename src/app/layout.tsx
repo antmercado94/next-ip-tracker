@@ -20,7 +20,7 @@ export default async function RootLayout({
       <body className={rubik.className}>
         <main className="relative">
           <div className="absolute top-0 -z-50 w-full min-w-[18rem]">
-            <div className="relative h-80 sm:h-[17.15rem] md:h-[17.65rem] lg:h-[17.75rem]">
+            <div className="relative flex h-80 sm:h-[17.15rem] md:h-[17.65rem] lg:h-[17.75rem]">
               <BackgroundPattern />
             </div>
             {children}
